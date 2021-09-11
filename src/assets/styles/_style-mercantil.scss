@@ -1,0 +1,207 @@
+// --> Libraries
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~ng-pick-datetime/assets/style/picker.min.css';
+
+// --> Fonts
+@import '../fonts/fonts.scss';
+// --> Variables css
+@import './variables/variables-color';
+// --> Reset styles
+@import './reset/reset-html';
+
+// --> Componentes
+@import './components/buttons';
+@import './components/cards';
+@import './components/header-body';
+@import './components/inputs';
+@import './components/modals';
+@import './components/page404.component';
+@import './components/sidebar';
+@import './components/table';
+@import './components/requests';
+
+// --> Utilities
+@import './utilities/utilities';
+
+:root {
+  --c-bg-modal: 2, 74, 46;
+  --icon-rad: 50%;
+  --icon-right: -15px;
+  --icon-top: -15px;
+  --icon-background: 255, 255, 255;
+  --icon-fill: 255, 0, 0;
+}
+
+.bg-gray {
+  background-color: #f7f8fb !important;
+}
+.small-svg-not-found {
+  svg {
+    width: 130px;
+  }
+}
+.inbox-input-filter {
+  width: 230px;
+  position: relative;
+  margin-right: 40px;
+
+  &__content {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: var(--color-dark-light);
+    }
+  }
+  input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--color-dark-light);
+    border-radius: 10px;
+    padding: 0 0 0 50px;
+  }
+  button {
+    position: absolute;
+    background-color: transparent;
+    left: 100%;
+    top: 10px;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--color-danger);
+    }
+  }
+}
+.inbox-assign {
+  text-align: center;
+  h1 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    padding-top: 40px;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+  }
+  svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--color-primary);
+  }
+}
+
+.hide-head-modal {
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.content-photo {
+  &__image {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__block {
+    display: block;
+    width: 100%;
+    height: 270px;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    &--active {
+      width: 0;
+    }
+  }
+
+  &__actions {
+    margin-top: 15px;
+    button {
+      background-color: transparent;
+      margin-bottom: 15px;
+
+      &.gray svg {
+        fill: #333333;
+      }
+      &.green svg {
+        fill: var(--color-green);
+      }
+
+      &.red svg {
+        fill: var(--color-danger);
+      }
+    }
+    &__state {
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 10px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+
+      &--green {
+        background-color: var(--color-green);
+      }
+
+      &--warning {
+        background-color: var(--color-warning);
+      }
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__upload-title {
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  &__label {
+    height: 200px;
+    border: 1px solid var(--color-dark-light);
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    svg {
+      fill: var(--color-dark-light);
+    }
+  }
+  .ngxImageZoomContainer,
+  .ngxImageZoomThumbnail {
+    width: 100% !important;
+    height: 270px !important;
+  }
+  .ngxImageZoomFullContainer.ngxImageZoomLensEnabled {
+    border: 1px solid green !important;
+  }
+  // --> Border to zoom
+  .ngxImageZoomThumbnail {
+    height: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+.input-select--green {
+  .input-select {
+    background-color: $color-contrast;
+    color: $color-dark-dark;
+    border-color: $color-primary-dark;
+  }
+  label {
+    color: $color-primary-dark;
+  }
+  .input-error {
+    position: absolute;
+    bottom: -16px;
+    small {
+      color: $color-danger;
+    }
+  }
+}
+
+.input-select {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  padding: 15px 0 0 6px;
+  font-size: 0.9rem;
+
+  &--change-error {
+    .input-error {
+      bottom: -20px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    pointer-events: none;
+    top: 12px;
+    color: #ffffff;
+    margin-bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 25px;
+    margin-top: -3px;
+    opacity: 0.5;
+  }
+
+  &--valid {
+    & + .input-select__label {
+      top: 4px;
+      font-size: 0.7rem;
+      text-align: left;
+      opacity: 1;
+    }
+  }
+  &--invalid {
+    box-shadow: 0 0 4px $color-danger;
+    border: none;
+  }
+}
+
+/***
+Input date
+ */
+.input-date {
+  height: 40px;
+  border-radius: 10px;
+  padding: 12px 0 0 10px;
+  border: 1px solid;
+
+  &--valid + label{
+    font-size: 0.7rem;
+    top: 0;
+    left: 10px;
+    transform: translateX(0);
+    color: var(--color-primary);
+    padding-left: 15px;
+  }
+}
+mono-input-date {
+  label {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+  }
+  .input-error {
+    small {
+      color: $color-danger;
+    }
+  }
+  .input-date--invalid {
+    box-shadow: 0 0 4px $color-danger;
+    border: none;
+  }
+}

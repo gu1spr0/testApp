@@ -1,0 +1,41 @@
+.u-height{
+    height: 100%;
+    background-color: $color-contrast;
+}
+
+.u-margin-top-1{
+    margin-top: 1rem;
+}
+.u-margin-top-15{
+  margin-top: 1.5rem;
+}
+.u-margin-top-20{
+  margin-top: 20px;
+}
+
+.u-margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.u-display-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.u-display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-display-flex-column {
+  flex-direction: column;
+}
+
+.u-p-0 {
+  padding: 0;
+}
+
+.u-pb-15 {
+  padding-bottom: 15px;
+}

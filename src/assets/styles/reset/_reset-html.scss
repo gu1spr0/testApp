@@ -1,0 +1,41 @@
+html,
+body{
+  height: 100%;
+}
+body {
+  font-family: 'Uni.Neue', sans-serif;
+  font-size: 16px;
+  background-color: #f7f8fb;
+}
+
+h1,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal_responsive__footer {
+  text-align: center;
+}
+.modal_responsive__header--close {
+  border: 2px solid red;
+  svg{
+    fill: red !important;
+  }
+}
+.modal_responsive__confirm h1 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}

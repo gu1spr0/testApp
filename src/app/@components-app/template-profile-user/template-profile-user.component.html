@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="table-information--title">Perfil de usuario</h1>
+        </div>
+        <div class="col-12">
+            <div class="table-information--border">
+                <table class="table-information" *ngIf="data">
+                    <tr *ngFor="let item of keys">
+                        <td class="right">{{ item['key'] }}</td>
+                        <td class="left">{{ data[item['value']] }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="u-text-center">
+                <ng-content></ng-content>
+            </div>
+        </div>
+    </div>
+</div>

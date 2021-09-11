@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./theme/variables.scss";
+@import "./assets/style.scss";
+@import "./assets/styles/style-mercantil";
+
+* {
+    font-family: 'Uni.Neue.Regular';
+}
+
+select, option {
+    font: -moz-pull-down-menu;
+    -moz-font-family: "Uni.Neue.Regular";
+    font-size: 0.9rem;
+}
+//Estilos Sidebar
+.sidebar-nav > ul > li.active > a {
+    color: #024a2e;
+}
+.sidebar-nav > ul > li.active > a i {
+    color: #024a2e;
+}
+
+.sidebar-nav ul li a.active,
+.sidebar-nav ul li a:hover{
+    color: #024a2e;
+    font-weight: bold;
+}
+
+.sidebar-nav ul li a.active i,
+.sidebar-nav ul li a:hover i {
+  color: #024a2e;
+}
+
+.mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+  background: #ffffff;
+}
+
+.mini-sidebar .sidebar-nav #sidebarnav > li > ul {
+  background: #ffffff;
+}
+
+.sidebar-icon-size {
+  font-size: 19px !important;
+}
+
+.cursor {
+  cursor: pointer !important;
+}
+
+.not-cursor {
+  cursor: none !important;
+}
+//Transicion rápida
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+

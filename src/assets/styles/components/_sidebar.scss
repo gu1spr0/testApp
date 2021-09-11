@@ -1,0 +1,13 @@
+.responsive-sidebar {
+  width: 60px !important;
+  z-index: 10;
+}
+.r-sidebar__list--active {
+  color: var(--color-primary) !important;
+}
+innova-sidebar-theme {
+  accordion {
+    opacity: 1;
+    transition: opacity .1s linear;
+  }
+}

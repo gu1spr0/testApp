@@ -1,0 +1,219 @@
+/* ------------------------- */
+/* Estilos de fila espaciada */
+/* ------------------------- */
+.title-with-back {
+  padding-left: 30px;
+  position: relative;
+}
+.row-spaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.align-h {
+  display: flex;
+}
+
+/* --------------------- */
+/* Estilos de formulario */
+/* --------------------- */
+.custom-input-search {
+  margin-right: 10px;
+
+  div {
+    background-color: #FFF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 1px solid #024a2e;
+    border-top: 1px solid #024a2e;
+    border-right: 1px solid #024a2e;
+
+    i {
+      color: #D62121;
+    }
+  }
+
+  input {
+    border: none;
+    font-size: 14px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom: 1px solid #024a2e;
+    border-top: 1px solid #024a2e;
+    border-left: 1px solid #024a2e;
+  }
+}
+
+.custom-select {
+  background-color: #FFF;
+  border: 1px solid #024a2e;
+  font-size: 14px;
+  height: 40px !important;
+  border-radius: 8px;
+}
+
+.custom-button {
+  background-color: #024a2e;
+  border-radius: 8px;
+  color: #FFF;
+  box-shadow: none !important;
+}
+
+/* ------------------ */
+/* Estilos de listado */
+/* ------------------ */
+.w100 {
+  width: 100px;
+}
+
+.w150 {
+  width: 150px;
+}
+
+th {
+  font-size: 13px;
+  color: #024a2e;
+  text-align: center;
+}
+
+i.fa {
+  font-size: 20px;
+  color: #024a2e;
+  cursor: pointer;
+}
+
+i.fa:hover {
+  color: #033a25;
+}
+
+td {
+  font-size: 13px;
+  color: rgb(17, 16, 16);
+  text-align: center;
+}
+
+.label-info {
+  background-color: #024a2e;
+}
+
+.label-danger {
+  background-color: #D62121;
+}
+
+.text-white-msg {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+/* ---------------- */
+/* Estilos de modal */
+/* ---------------- */
+.modal-content {
+  background-color: #024a2e;
+  position: relative;
+}
+
+.modal-header {
+  display: grid;
+  justify-content: center;
+  border-bottom: none;
+}
+
+.modal-title {
+  color: #FFF;
+}
+
+.close-modal {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #D62121;
+  background: #FFF;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: -2%;
+  right: -2%;
+
+  i {
+    color: #D62121;
+    font-size: 13px;
+    transform: rotate(45deg);
+  }
+}
+
+.w250 {
+  width: 250px;
+}
+
+.modal-footer {
+  display: grid;
+  justify-content: center;
+  border-top: none;
+}
+
+.modal-footer button {
+  color: #024a2e;
+  box-shadow: none !important;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.custom-input-dark {
+  background: #024a2e;
+  border: 1px solid #FFF;
+  outline-color: #033a25;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pl5 {
+  padding-left: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.dark {
+  background-color: #024a2e;
+  color: #FFF;
+  border-color: #FFF;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.custom-date {
+  background-color: #024a2e;
+  color: #FFF;
+  border-color: #FFF;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media(max-width: 768px) {
+    min-height: calc(100vh - 20px);
+  }
+}

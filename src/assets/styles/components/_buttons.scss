@@ -1,0 +1,66 @@
+.button-modal {
+  background-color: $color-primary-dark;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: 180px;
+  color: $color-contrast;
+  transition: all 0.3s linear;
+  &:hover{
+    background-color: $color-primary-light;
+  }
+}
+
+.button-modal-confirm {
+  color: white;
+  font-weight: 500;
+  padding: 5px 20px;
+  border-radius: 5px;
+
+  &--success {
+    background-color: green;
+  }
+
+  &--success-dark {
+    background-color: var(--color-primary);
+  }
+
+  &--danger {
+    background-color: red;
+  }
+}
+
+/**
+Button show more
+*/
+.button-more {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+/**
+Button show more data in table
+ */
+.btn-more-data {
+  background-color: transparent;
+  padding: 0;
+  margin-left: 3px;
+
+  &:hover + .tooltip-more-data  {
+    transform: scale(1, 1);
+  }
+}
+.tooltip-more-data {
+  position: absolute;
+  bottom: 20px;
+  width: 320px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -3px #d6dce8;
+  z-index: 1;
+  transform: scale(0.4, 0);
+  transform-origin: bottom center;
+  transition: transform .2s cubic-bezier(.41,.34,.75,.92);
+}
